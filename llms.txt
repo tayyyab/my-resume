@@ -1,0 +1,49 @@
+# Muhammad Tayyab Bahaud Din
+
+> Senior Flutter & AI Engineer based in Islamabad, Pakistan, working remotely worldwide. 6+ years building cross-platform iOS and Android apps with Flutter; now focused on AI-driven development — LLM integration, RAG and agentic workflows with Python/FastAPI back ends. Available for freelance and contract projects.
+
+- Email: mtbahauddin@gmail.com
+- LinkedIn: https://www.linkedin.com/in/tayyyab/
+- GitHub: https://github.com/tayyyab
+- Portfolio: https://portfolio.mtbahauddin.com/
+- Résumé (HTML): https://portfolio.mtbahauddin.com/resume.html
+- Résumé (PDF): https://portfolio.mtbahauddin.com/resume.pdf
+
+## Services
+
+- Cross-platform app development: Flutter apps for iOS, Android and web, from prototype to store release.
+- AI features for products: chat assistants, smart search and automation using LLMs, RAG and agentic workflows via Python/FastAPI services.
+- Architecture, audits and rescue: scalable foundations, state management, performance on low-end devices, legacy refactoring.
+- Release and CI/CD: build pipelines, Dev/QA/Prod flavors, App Store Connect and Google Play publishing.
+
+## Experience
+
+- Flutter Engineer — LogicEra (Cloud & AI Partner), Dubai, UAE (remote), Oct 2025 – present.
+- Senior Software Engineer (Cross-Platform) — Al Taif Group, Islamabad, Pakistan, Mar 2022 – Oct 2025. Led an engineering team on enterprise delivery and e-commerce apps serving thousands of active users; designed modular architectures; built CI/CD and multi-flavor environments; owned App Store and Google Play releases; ran code reviews and performance audits.
+- Software Engineer (Flutter) — Turing, remote, part-time, Aug 2023 – Dec 2023. Full-stack marketplace features with Python, Django REST Framework, Docker and PostgreSQL; Riverpod state management; CI/CD and build flavors.
+- Software Engineer (Flutter) — AppWowZap, Apr 2021 – May 2022. Flutter and React Native apps; POS thermal printing via method channels; real-time messaging, Stripe payments and Google Maps; FCM push notifications.
+- Software Engineer (Flutter) — EmCentrix, Nov 2019 – Apr 2021. TDD and automated testing; early CI/CD; greenfield Flutter apps and refactoring legacy native Android code.
+
+## Selected projects
+
+- [Ticket Wallet](https://apps.apple.com/us/app/ticket-wallet/id6463562809): iOS & Android ticket marketplace with AI-assisted listing and pricing; 4.8 rating on the App Store. Also on [Google Play](https://play.google.com/store/apps/details?id=co.ticketwallet.application).
+- [TFM Courier 2](https://play.google.com/store/apps/details?id=com.tfmexpress.courier.tfmcourier): Android field app for delivery riders — scanning, location tracking, offline-tolerant sync; 5K+ installs, 4.4 rating.
+- [TFM Shipper 2](https://play.google.com/store/apps/details?id=com.tfmexpress.shipper.tfmshipper): Android customer shipping app — booking, tracking and support; 4.4 rating.
+- [Recall App](https://play.google.com/store/apps/details?id=com.mtbahauddin.recall): personal offline-first media tracker built solo with Flutter, BLoC and Hive.
+
+## Skills
+
+- Mobile: Flutter, Dart, iOS, Android, Kotlin, Swift, React Native, platform channels
+- Architecture: Riverpod, BLoC, clean architecture, TDD, performance optimisation
+- AI & ML: LLM integration and orchestration, RAG, agentic AI, machine learning, Azure AI
+- Backend & data: Python, FastAPI, Django REST Framework, PostgreSQL, Firebase, SQLite, Hive, Docker, REST, WebSockets
+- Integrations: Stripe, Google Maps, Firebase Cloud Messaging, POS thermal printing
+- Delivery: CI/CD, build flavors, App Store Connect, Google Play Console, Git, Agile/Scrum, team leadership
+
+## Education and certifications
+
+- Bachelor's degree, Computer Science — Qurtuba University of Science and Information Technology, 2015 – 2019
+- Microsoft Certified: Azure AI Fundamentals — Aug 2026, credential ID 89675DE221E0644
+- Supervised Machine Learning: Regression and Classification — DeepLearning.AI & Stanford (Coursera)
+- Advanced Learning Algorithms — DeepLearning.AI & Stanford (Coursera)
+- Unsupervised Learning, Recommenders, Reinforcement Learning — DeepLearning.AI & Stanford (Coursera)

@@ -1,0 +1,6 @@
+# Everyone — search engines, ATS crawlers and AI assistants — is welcome.
+User-agent: *
+Allow: /
+Disallow: /tools/
+
+Sitemap: https://portfolio.mtbahauddin.com/sitemap.xml

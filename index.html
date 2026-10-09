@@ -1,71 +1,844 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad Tayyab Bahaud Din — Senior Flutter &amp; AI Engineer</title>
+  <meta name="description" content="Senior Flutter engineer with 6+ years building cross-platform iOS and Android apps, now integrating AI: LLMs, RAG and agentic workflows. Available for freelance and contract projects.">
+  <meta name="author" content="Muhammad Tayyab Bahaud Din">
+  <meta name="keywords" content="Flutter developer, Senior Flutter Engineer, mobile app developer, iOS, Android, Dart, Riverpod, AI engineer, LLM integration, RAG, agentic AI, FastAPI, freelance Flutter developer, Islamabad, Pakistan, remote">
+  <link rel="canonical" href="https://portfolio.mtbahauddin.com/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+  <!-- Machine-readable résumé formats -->
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="Plain-text profile for AI assistants">
+  <link rel="alternate" type="text/html" href="/resume.html" title="Résumé (ATS-friendly)">
+  <link rel="alternate" type="application/pdf" href="/resume.pdf" title="Résumé (PDF)">
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  <!-- Social -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Muhammad Tayyab Bahaud Din">
+  <meta property="og:title" content="Muhammad Tayyab Bahaud Din — Senior Flutter & AI Engineer">
+  <meta property="og:description" content="I build polished iOS & Android apps with Flutter — and add real AI features to them. Available for freelance and contract projects.">
+  <meta property="og:url" content="https://portfolio.mtbahauddin.com/">
+  <meta property="og:image" content="https://portfolio.mtbahauddin.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Muhammad Tayyab Bahaud Din — Senior Flutter & AI Engineer">
+  <meta property="profile:first_name" content="Muhammad Tayyab">
+  <meta property="profile:last_name" content="Bahaud Din">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhammad Tayyab Bahaud Din — Senior Flutter & AI Engineer">
+  <meta name="twitter:description" content="I build polished iOS & Android apps with Flutter — and add real AI features to them.">
+  <meta name="twitter:image" content="https://portfolio.mtbahauddin.com/assets/img/og-image.png">
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
+  <meta name="theme-color" content="#07080a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f7f3" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/mtb-icon-192.png">
+  <link rel="apple-touch-icon" href="/assets/img/mtb-icon-192.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Portfolio">
+  <!-- Apply saved theme before first paint -->
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Portfolio">
-  <link rel="apple-touch-icon" href="icons/mtb-icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.ico"/>
-
-  <title>Portfolio</title>
-  <link rel="manifest" href="manifest.json">
-
-
-  <style>
-    /* Loading spinner styles */
-    .loading-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: white;
-    }
-    
-    .loading-icon {
-      font-family: Arial, sans-serif;
-      font-size: 72px;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-  </style>
-
+  <!-- Structured data: lets search engines, ATS parsers and AI assistants read this page as a résumé -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://portfolio.mtbahauddin.com/#website",
+        "url": "https://portfolio.mtbahauddin.com/",
+        "name": "Muhammad Tayyab Bahaud Din — Portfolio",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://portfolio.mtbahauddin.com/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://portfolio.mtbahauddin.com/#profile",
+        "url": "https://portfolio.mtbahauddin.com/",
+        "name": "Muhammad Tayyab Bahaud Din — Senior Flutter & AI Engineer",
+        "isPartOf": { "@id": "https://portfolio.mtbahauddin.com/#website" },
+        "dateModified": "2026-10-10",
+        "mainEntity": { "@id": "https://portfolio.mtbahauddin.com/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://portfolio.mtbahauddin.com/#person",
+        "name": "Muhammad Tayyab Bahaud Din",
+        "givenName": "Muhammad Tayyab",
+        "familyName": "Bahaud Din",
+        "alternateName": ["Tayyab", "Muhammad Tayyab", "MT Bahauddin"],
+        "jobTitle": "Senior Flutter & AI Engineer",
+        "description": "Software engineer with 6+ years of experience architecting high-performance cross-platform mobile applications with Flutter, now focused on AI-driven development: LLM orchestration, RAG architectures and agentic workflows with Python and FastAPI backends. Available for freelance and contract projects.",
+        "url": "https://portfolio.mtbahauddin.com/",
+        "email": "mailto:mtbahauddin@gmail.com",
+        "image": "https://portfolio.mtbahauddin.com/assets/img/mtb-icon-512.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Islamabad",
+          "addressCountry": "PK"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/tayyyab/",
+          "https://github.com/tayyyab"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "LogicEra - Cloud & AI Partner"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Qurtuba University of Science and Information Technology"
+        },
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Flutter Engineer",
+          "occupationLocation": { "@type": "Country", "name": "Pakistan" },
+          "skills": "Flutter, Dart, iOS, Android, Kotlin, Swift, React Native, Riverpod, BLoC, Firebase, Python, FastAPI, Django REST Framework, PostgreSQL, Docker, CI/CD, LLM integration, RAG, Agentic AI, Machine Learning"
+        },
+        "knowsAbout": [
+          "Flutter", "Dart", "Cross-platform mobile development", "iOS development", "Android development",
+          "Kotlin", "Swift", "React Native", "Riverpod", "BLoC", "Clean architecture",
+          "Test-driven development", "Firebase", "Firebase Cloud Messaging", "SQLite", "Hive",
+          "Python", "FastAPI", "Django REST Framework", "PostgreSQL", "Docker", "REST APIs", "WebSockets",
+          "Google Maps API", "Stripe", "Platform channels", "CI/CD", "App Store Connect", "Google Play Console",
+          "Large language models", "Retrieval-augmented generation", "Agentic AI", "Machine learning"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Bachelor's degree, Computer Science",
+            "credentialCategory": "degree",
+            "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Qurtuba University of Science and Information Technology" }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Microsoft Certified: Azure AI Fundamentals",
+            "credentialCategory": "certification",
+            "identifier": "89675DE221E0644",
+            "dateCreated": "2026-08",
+            "recognizedBy": { "@type": "Organization", "name": "Microsoft" }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Supervised Machine Learning: Regression and Classification",
+            "credentialCategory": "certificate",
+            "recognizedBy": { "@type": "Organization", "name": "DeepLearning.AI & Stanford University (Coursera)" }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Advanced Learning Algorithms",
+            "credentialCategory": "certificate",
+            "recognizedBy": { "@type": "Organization", "name": "DeepLearning.AI & Stanford University (Coursera)" }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+            "credentialCategory": "certificate",
+            "recognizedBy": { "@type": "Organization", "name": "DeepLearning.AI & Stanford University (Coursera)" }
+          }
+        ],
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cross-platform mobile app development (Flutter, iOS, Android)" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI feature integration: LLMs, RAG and agentic workflows" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mobile app architecture, audits and performance optimization" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CI/CD and App Store / Google Play release management" } }
+        ]
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Ticket Wallet",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "LifestyleApplication",
+        "description": "Real-time marketplace for buying and selling sports and event tickets, with AI-assisted listing and price comparison.",
+        "url": "https://apps.apple.com/us/app/ticket-wallet/id6463562809",
+        "sameAs": "https://play.google.com/store/apps/details?id=co.ticketwallet.application",
+        "contributor": { "@id": "https://portfolio.mtbahauddin.com/#person" }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "TFM Courier 2",
+        "operatingSystem": "Android",
+        "applicationCategory": "BusinessApplication",
+        "description": "Field app for TFM Express delivery riders to pull daily pickups and deliveries, update them in the field and sync back to the system.",
+        "url": "https://play.google.com/store/apps/details?id=com.tfmexpress.courier.tfmcourier",
+        "contributor": { "@id": "https://portfolio.mtbahauddin.com/#person" }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "TFM Shipper 2",
+        "operatingSystem": "Android",
+        "applicationCategory": "BusinessApplication",
+        "description": "Customer app for TFM Express: open an account, book parcel collection, track shipments and request support.",
+        "url": "https://play.google.com/store/apps/details?id=com.tfmexpress.shipper.tfmshipper",
+        "contributor": { "@id": "https://portfolio.mtbahauddin.com/#person" }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Recall App",
+        "operatingSystem": "Android",
+        "applicationCategory": "EntertainmentApplication",
+        "description": "Offline-first tracker for movies, anime, manga and books — designed and built solo.",
+        "url": "https://play.google.com/store/apps/details?id=com.mtbahauddin.recall",
+        "author": { "@id": "https://portfolio.mtbahauddin.com/#person" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <!-- Loading screen that shows before Flutter loads -->
-  <div id="loading" class="loading-container">
-    <img class="loading-icon" src="icons/mtb-icon-192.png" alt="Loading Icon">
-  </div>
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4M22 5h-4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24"><rect width="20" height="8" x="2" y="2" rx="2"/><rect width="20" height="8" x="2" y="14" rx="2"/><path d="M6 6h.01M6 18h.01"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path class="icon-fill" d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path class="icon-fill" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path class="icon-fill" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+    <symbol id="i-apple" viewBox="0 0 24 24"><path class="icon-fill" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path class="icon-fill" d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+  </svg>
 
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <script src="flutter_bootstrap.js" async></script>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Muhammad Tayyab Bahaud Din — home">
+        <span class="brand-mark" aria-hidden="true">mtb</span>
+        <span>Tayyab</span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#work">Work</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="/resume.pdf">Résumé</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle light or dark theme">
+          <svg class="icon i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+          <svg class="icon i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        </button>
+        <a class="btn btn-primary btn-sm header-cta" href="#contact">Hire me</a>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+          <svg class="icon i-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="icon i-close" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= Hero ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status-pill"><span class="status-dot" aria-hidden="true"></span>Available for freelance &amp; contract projects</p>
+
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-kicker"><strong>Muhammad Tayyab Bahaud Din</strong> — Senior Flutter &amp; AI Engineer</span>
+            I build polished mobile apps — <span class="hl">with AI built&nbsp;in.</span>
+          </h1>
+
+          <p class="hero-lead">
+            I’m Tayyab, a software engineer with <strong>6+ years</strong> shipping iOS and Android apps with Flutter for
+            marketplaces, logistics and e-commerce. Today I help teams add <strong>real AI</strong> to their products:
+            LLM features, RAG-powered search and agentic workflows, backed by Python &amp; FastAPI.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="mailto:mtbahauddin@gmail.com?subject=Project%20enquiry">
+              Start a project
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#work">See my work</a>
+          </div>
+
+          <ul class="hero-meta">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Islamabad, Pakistan · Remote worldwide</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>UTC+5</li>
+            <li><a href="/resume.pdf"><svg class="icon" aria-hidden="true" style="display:inline;vertical-align:-3px;margin-right:8px"><use href="#i-download"/></svg>Download résumé</a></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone phone-left"><img src="/assets/img/projects/tfm-shipper/tfm-shipper-2.webp" alt="" width="266" height="592" fetchpriority="low"></div>
+          <div class="phone phone-front"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-5.webp" alt="" width="460" height="995" fetchpriority="high"></div>
+          <div class="phone phone-right"><img src="/assets/img/projects/recall-app/recall-app-1.webp" alt="" width="266" height="592" fetchpriority="low"></div>
+          <span class="chip-float chip-a"><svg class="icon"><use href="#i-phone"/></svg>Flutter · iOS · Android</span>
+          <span class="chip-float chip-b"><svg class="icon"><use href="#i-sparkles"/></svg>LLM + RAG</span>
+          <span class="chip-float chip-c"><svg class="icon"><use href="#i-server"/></svg>Python · FastAPI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Proof strip ================= -->
+    <section class="proof" aria-label="Highlights">
+      <div class="container">
+        <ul class="proof-list">
+          <li class="proof-item">
+            <p class="proof-value">6+ yrs</p>
+            <p class="proof-label">building production mobile apps since 2019</p>
+          </li>
+          <li class="proof-item">
+            <p class="proof-value">4.8<svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></p>
+            <p class="proof-label">Ticket Wallet rating on the Apple App Store</p>
+          </li>
+          <li class="proof-item">
+            <p class="proof-value">5K+</p>
+            <p class="proof-label">installs of TFM Courier 2 on Google Play</p>
+          </li>
+          <li class="proof-item">
+            <p class="proof-value">iOS · Android</p>
+            <p class="proof-label">plus web, from a single Flutter codebase</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= Services ================= -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2 class="section-title" id="services-title">What I can build for you</h2>
+          <p class="section-lead">From a first prototype to a store-ready product, or adding AI to an app you already have.</p>
+        </header>
+
+        <div class="services-grid">
+          <article class="card service reveal">
+            <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></div>
+            <h3>Cross-platform app development</h3>
+            <p>One Flutter codebase, native-quality apps on iOS, Android and the web — taken from first prototype all the way to the stores.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li class="tag">Flutter</li><li class="tag">Dart</li><li class="tag">iOS</li><li class="tag">Android</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg></div>
+            <h3>AI features for your product</h3>
+            <p>Chat assistants, smart search and automation using LLMs, RAG pipelines and agentic workflows — wired into your app through clean Python / FastAPI services.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li class="tag">LLMs</li><li class="tag">RAG</li><li class="tag">Agentic AI</li><li class="tag">FastAPI</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></div>
+            <h3>Architecture, audits &amp; rescue</h3>
+            <p>A scalable foundation for new apps, or a hands-on review of an existing one: state management, performance on low-end devices and refactoring legacy code.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li class="tag">Riverpod</li><li class="tag">BLoC</li><li class="tag">Clean architecture</li><li class="tag">TDD</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#i-rocket"/></svg></div>
+            <h3>Release &amp; CI/CD</h3>
+            <p>Automated build pipelines, Dev / QA / Production flavors, and complete App Store Connect and Google Play publishing — certificates, compliance and reviews handled.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li class="tag">CI/CD</li><li class="tag">Flavors</li><li class="tag">App Store</li><li class="tag">Play Console</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Work ================= -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="section-title" id="work-title">Apps I’ve built and shipped</h2>
+          <p class="section-lead">All live on the App Store and Google Play. Ratings and install counts are taken directly from the stores.</p>
+        </header>
+
+        <div class="projects">
+
+          <!-- Ticket Wallet -->
+          <article class="project reveal" id="ticket-wallet" aria-labelledby="p-tw">
+            <div class="project-body">
+              <div class="project-head">
+                <img class="project-logo" src="/assets/img/projects/ticket-wallet-logo.png" alt="Ticket Wallet logo" width="56" height="56" loading="lazy">
+                <div>
+                  <h3 class="project-title" id="p-tw">Ticket Wallet</h3>
+                  <p class="project-kind">AI-assisted ticket marketplace · iOS &amp; Android</p>
+                </div>
+              </div>
+              <p class="project-summary">
+                A real-time marketplace for buying and selling sports and event tickets. Sellers list once and reach buyers
+                across all major marketplaces, while AI-assisted pricing and a price-comparison chart help everyone get a fair deal.
+              </p>
+              <ul class="checks">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Shipped to the App Store and Google Play from one Flutter codebase</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>AI-powered listing and pricing flow for sellers</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Price comparison against other ticket marketplaces</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Live since October 2023 and still actively updated</li>
+              </ul>
+              <dl class="project-meta">
+                <div><dt>Role</dt><dd>Lead Flutter developer</dd></div>
+                <div><dt>Stack</dt><dd><ul class="tags"><li class="tag">Flutter</li><li class="tag">Dart</li><li class="tag">Firebase</li><li class="tag">Payments</li><li class="tag">Push notifications</li><li class="tag">REST APIs</li></ul></dd></div>
+              </dl>
+              <div class="project-footer">
+                <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>4.8 <span class="rating-src">App Store · 32 ratings</span></p>
+                <div class="store-links">
+                  <a class="store-link" href="https://apps.apple.com/us/app/ticket-wallet/id6463562809" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-apple"/></svg>App Store</a>
+                  <a class="store-link" href="https://play.google.com/store/apps/details?id=co.ticketwallet.application" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Google Play</a>
+                </div>
+              </div>
+            </div>
+            <div class="gallery" role="group" aria-label="Ticket Wallet screenshots" data-gallery="Ticket Wallet">
+              <a class="shot" href="/assets/img/projects/ticket-wallet/ticket-wallet-1.webp"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-1.webp" alt="Ticket Wallet: find tickets to your favourite shows" width="274" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/ticket-wallet/ticket-wallet-2.webp"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-2.webp" alt="Ticket Wallet app screen 2" width="274" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/ticket-wallet/ticket-wallet-3.webp"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-3.webp" alt="Ticket Wallet app screen 3" width="274" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/ticket-wallet/ticket-wallet-4.webp"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-4.webp" alt="Ticket Wallet app screen 4" width="274" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/ticket-wallet/ticket-wallet-5.webp"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-5.webp" alt="Ticket Wallet app screen 5" width="460" height="995" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/ticket-wallet/ticket-wallet-6.webp"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-6.webp" alt="Ticket Wallet app screen 6" width="460" height="995" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/ticket-wallet/ticket-wallet-7.webp"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-7.webp" alt="Ticket Wallet app screen 7" width="460" height="995" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/ticket-wallet/ticket-wallet-8.webp"><img src="/assets/img/projects/ticket-wallet/ticket-wallet-8.webp" alt="Ticket Wallet app screen 8" width="460" height="995" loading="lazy"></a>
+            </div>
+          </article>
+
+          <!-- TFM Courier -->
+          <article class="project reveal" id="tfm-courier" aria-labelledby="p-tc">
+            <div class="project-body">
+              <div class="project-head">
+                <img class="project-logo" src="/assets/img/projects/tfm-courier-logo.png" alt="TFM Express logo" width="56" height="56" loading="lazy">
+                <div>
+                  <h3 class="project-title" id="p-tc">TFM Courier 2</h3>
+                  <p class="project-kind">Field operations app for delivery riders · Android</p>
+                </div>
+              </div>
+              <p class="project-summary">
+                Used daily by TFM Express riders to pull their assigned pickups and deliveries, update them in the field and
+                push the changes back to dispatch — built to keep working on the road.
+              </p>
+              <ul class="checks">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Barcode / QR scanning to verify shipments at pickup and drop-off</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Location tracking and map-based routing for riders</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Offline-tolerant local storage that syncs when connectivity returns</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Biometric sign-in and multi-language support</li>
+              </ul>
+              <dl class="project-meta">
+                <div><dt>Role</dt><dd>Senior mobile developer</dd></div>
+                <div><dt>Stack</dt><dd><ul class="tags"><li class="tag">Flutter</li><li class="tag">SQLite</li><li class="tag">REST APIs</li><li class="tag">Google Maps</li><li class="tag">Background services</li></ul></dd></div>
+              </dl>
+              <div class="project-footer">
+                <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>4.4 <span class="rating-src">Google Play · 5K+ installs</span></p>
+                <div class="store-links">
+                  <a class="store-link" href="https://play.google.com/store/apps/details?id=com.tfmexpress.courier.tfmcourier" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Google Play</a>
+                </div>
+              </div>
+            </div>
+            <div class="gallery" role="group" aria-label="TFM Courier 2 screenshots" data-gallery="TFM Courier 2">
+              <a class="shot" href="/assets/img/projects/tfm-courier/tfm-courier-1.webp"><img src="/assets/img/projects/tfm-courier/tfm-courier-1.webp" alt="TFM Courier 2: rider sign-in with biometric login" width="266" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/tfm-courier/tfm-courier-2.webp"><img src="/assets/img/projects/tfm-courier/tfm-courier-2.webp" alt="TFM Courier 2 app screen 2" width="266" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/tfm-courier/tfm-courier-3.webp"><img src="/assets/img/projects/tfm-courier/tfm-courier-3.webp" alt="TFM Courier 2 app screen 3" width="266" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/tfm-courier/tfm-courier-4.webp"><img src="/assets/img/projects/tfm-courier/tfm-courier-4.webp" alt="TFM Courier 2 app screen 4" width="266" height="592" loading="lazy"></a>
+            </div>
+          </article>
+
+          <!-- TFM Shipper -->
+          <article class="project reveal" id="tfm-shipper" aria-labelledby="p-ts">
+            <div class="project-body">
+              <div class="project-head">
+                <img class="project-logo" src="/assets/img/projects/tfm-courier-logo.png" alt="TFM Express logo" width="56" height="56" loading="lazy">
+                <div>
+                  <h3 class="project-title" id="p-ts">TFM Shipper 2</h3>
+                  <p class="project-kind">Customer shipping app · Android</p>
+                </div>
+              </div>
+              <p class="project-summary">
+                The customer side of TFM Express: open an account, book parcel collection, follow shipments to the door and
+                reach support — without calling the office.
+              </p>
+              <ul class="checks">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Self-service account sign-up and shipment booking</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Real-time shipment tracking and enquiries</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>In-app technical support requests</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Push notifications for status updates</li>
+              </ul>
+              <dl class="project-meta">
+                <div><dt>Role</dt><dd>Mobile app developer</dd></div>
+                <div><dt>Stack</dt><dd><ul class="tags"><li class="tag">Flutter</li><li class="tag">Firebase</li><li class="tag">Google Maps</li><li class="tag">FCM</li><li class="tag">REST APIs</li></ul></dd></div>
+              </dl>
+              <div class="project-footer">
+                <p class="rating"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>4.4 <span class="rating-src">Google Play</span></p>
+                <div class="store-links">
+                  <a class="store-link" href="https://play.google.com/store/apps/details?id=com.tfmexpress.shipper.tfmshipper" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Google Play</a>
+                </div>
+              </div>
+            </div>
+            <div class="gallery" role="group" aria-label="TFM Shipper 2 screenshots" data-gallery="TFM Shipper 2">
+              <a class="shot" href="/assets/img/projects/tfm-shipper/tfm-shipper-1.webp"><img src="/assets/img/projects/tfm-shipper/tfm-shipper-1.webp" alt="TFM Shipper 2 app screen 1" width="266" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/tfm-shipper/tfm-shipper-2.webp"><img src="/assets/img/projects/tfm-shipper/tfm-shipper-2.webp" alt="TFM Shipper 2 app screen 2" width="266" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/tfm-shipper/tfm-shipper-3.webp"><img src="/assets/img/projects/tfm-shipper/tfm-shipper-3.webp" alt="TFM Shipper 2 app screen 3" width="266" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/tfm-shipper/tfm-shipper-4.webp"><img src="/assets/img/projects/tfm-shipper/tfm-shipper-4.webp" alt="TFM Shipper 2 app screen 4" width="266" height="592" loading="lazy"></a>
+            </div>
+          </article>
+
+          <!-- Recall -->
+          <article class="project reveal" id="recall" aria-labelledby="p-rc">
+            <div class="project-body">
+              <div class="project-head">
+                <img class="project-logo" src="/assets/img/projects/recall-app-logo.png" alt="Recall App logo" width="56" height="56" loading="lazy">
+                <div>
+                  <h3 class="project-title" id="p-rc">Recall App</h3>
+                  <p class="project-kind">Personal product · Android</p>
+                </div>
+              </div>
+              <p class="project-summary">
+                My own app for movie, anime, manga and book fans: a lightweight, offline-first tracker that remembers exactly
+                which episode or chapter you stopped at. Designed, built and published solo.
+              </p>
+              <ul class="checks">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Offline-first local database — no account needed</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Progress tracking by episode, runtime or chapter</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Custom UI and animations designed from scratch</li>
+              </ul>
+              <dl class="project-meta">
+                <div><dt>Role</dt><dd>Solo designer &amp; developer</dd></div>
+                <div><dt>Stack</dt><dd><ul class="tags"><li class="tag">Flutter</li><li class="tag">BLoC</li><li class="tag">Hive</li><li class="tag">Custom animations</li></ul></dd></div>
+              </dl>
+              <div class="project-footer">
+                <div class="store-links">
+                  <a class="store-link" href="https://play.google.com/store/apps/details?id=com.mtbahauddin.recall" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Google Play</a>
+                </div>
+              </div>
+            </div>
+            <div class="gallery" role="group" aria-label="Recall App screenshots" data-gallery="Recall App">
+              <a class="shot" href="/assets/img/projects/recall-app/recall-app-1.webp"><img src="/assets/img/projects/recall-app/recall-app-1.webp" alt="Recall App: library with manga and movie progress" width="266" height="592" loading="lazy"></a>
+              <a class="shot" href="/assets/img/projects/recall-app/recall-app-2.webp"><img src="/assets/img/projects/recall-app/recall-app-2.webp" alt="Recall App app screen 2" width="266" height="592" loading="lazy"></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Process ================= -->
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">How we’ll work</p>
+          <h2 class="section-title" id="process-title">A simple, transparent process</h2>
+          <p class="section-lead">You always know what’s being built, what’s next and what it costs.</p>
+        </header>
+        <ol class="process-list">
+          <li class="card process-step reveal">
+            <h3>Discover</h3>
+            <p>We talk through your goals, users and constraints. You get a clear scope, tech plan and estimate.</p>
+          </li>
+          <li class="card process-step reveal">
+            <h3>Design &amp; architect</h3>
+            <p>Screens, data flow and architecture are agreed up front, so the app scales without rewrites.</p>
+          </li>
+          <li class="card process-step reveal">
+            <h3>Build in sprints</h3>
+            <p>Short iterations with regular builds you can install on your own phone and give feedback on.</p>
+          </li>
+          <li class="card process-step reveal">
+            <h3>Launch &amp; support</h3>
+            <p>I handle App Store and Google Play submission, then stay on for fixes, updates and new features.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= Experience ================= -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section-title" id="experience-title">Where I’ve worked</h2>
+          <p class="section-lead">6+ years across product companies, agencies and remote teams.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="job reveal">
+            <p class="job-when">
+              <span class="job-dates"><time datetime="2025-10">Oct 2025</time> – Present</span>
+              Dubai, UAE<br>Remote · Full-time
+              <span class="job-current">Current role</span>
+            </p>
+            <div>
+              <h3 class="job-title">Flutter Engineer</h3>
+              <p class="job-company"><strong>LogicEra</strong> — Cloud &amp; AI Partner</p>
+              <ul class="job-points">
+                <li>Building cross-platform Flutter applications for a cloud and AI solutions partner, with a focus on AI-driven development and agentic workflows.</li>
+              </ul>
+              <ul class="tags" aria-label="Skills"><li class="tag">Flutter</li><li class="tag">Android</li><li class="tag">iOS</li><li class="tag">AI-driven development</li></ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <p class="job-when">
+              <span class="job-dates"><time datetime="2022-03">Mar 2022</time> – <time datetime="2025-10">Oct 2025</time></span>
+              Islamabad, Pakistan<br>On-site · Full-time · 3 yrs 8 mos
+            </p>
+            <div>
+              <h3 class="job-title">Senior Software Engineer (Cross-Platform)</h3>
+              <p class="job-company"><strong>Al Taif Group</strong></p>
+              <ul class="job-points">
+                <li>Led an engineering team architecting and scaling enterprise delivery and e-commerce applications serving thousands of active users.</li>
+                <li>Designed modular application architectures from scratch, standardising state management, directory structures and design patterns across company repositories.</li>
+                <li>Implemented automated CI/CD pipelines and multi-flavor environments (Dev, QA, Production), reducing deployment errors and accelerating release frequency.</li>
+                <li>Owned complete release lifecycles across App Store Connect and Google Play Console — publishing pipelines, certificates and compliance.</li>
+                <li>Ran systematic code reviews and performance audits, optimising memory footprint and rendering performance for low-spec devices.</li>
+              </ul>
+              <ul class="tags" aria-label="Skills"><li class="tag">Flutter</li><li class="tag">React Native</li><li class="tag">CI/CD</li><li class="tag">Team leadership</li><li class="tag">App Store</li><li class="tag">Google Play</li></ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <p class="job-when">
+              <span class="job-dates"><time datetime="2023-08">Aug 2023</time> – <time datetime="2023-12">Dec 2023</time></span>
+              Remote · Part-time
+            </p>
+            <div>
+              <h3 class="job-title">Software Engineer (Flutter)</h3>
+              <p class="job-company"><strong>Turing</strong></p>
+              <ul class="job-points">
+                <li>Engineered full-stack marketplace features using Python, Django REST Framework, Docker and PostgreSQL for secure, scalable back-end services.</li>
+                <li>Configured multi-environment build flavors and CI/CD automation to streamline cross-team development and staging.</li>
+                <li>Implemented reactive state management with Riverpod for responsive UIs with complex data-syncing needs.</li>
+                <li>Optimised app performance — thread efficiency, battery consumption and network requests.</li>
+              </ul>
+              <ul class="tags" aria-label="Skills"><li class="tag">Flutter</li><li class="tag">Riverpod</li><li class="tag">Python</li><li class="tag">Django REST</li><li class="tag">Docker</li><li class="tag">PostgreSQL</li></ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <p class="job-when">
+              <span class="job-dates"><time datetime="2021-04">Apr 2021</time> – <time datetime="2022-05">May 2022</time></span>
+              Full-time · 1 yr 2 mos
+            </p>
+            <div>
+              <h3 class="job-title">Software Engineer (Flutter)</h3>
+              <p class="job-company"><strong>AppWowZap</strong></p>
+              <ul class="job-points">
+                <li>Developed cross-platform client apps in Flutter and React Native, delivering native-grade experiences on iOS and Android.</li>
+                <li>Integrated hardware and platform features, including POS thermal printing through native method channels.</li>
+                <li>Engineered real-time messaging, payments and location services with WebSockets, Stripe and the Google Maps API.</li>
+                <li>Implemented Firebase Cloud Messaging for targeted push notifications and REST integrations for secure data exchange.</li>
+                <li>Managed end-to-end store publishing in line with Apple and Google developer guidelines.</li>
+              </ul>
+              <ul class="tags" aria-label="Skills"><li class="tag">Flutter</li><li class="tag">React Native</li><li class="tag">WebSockets</li><li class="tag">Stripe</li><li class="tag">Google Maps</li><li class="tag">FCM</li></ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <p class="job-when">
+              <span class="job-dates"><time datetime="2019-11">Nov 2019</time> – <time datetime="2021-04">Apr 2021</time></span>
+              On-site · Full-time · 1 yr 6 mos
+            </p>
+            <div>
+              <h3 class="job-title">Software Engineer (Flutter)</h3>
+              <p class="job-company"><strong>EmCentrix</strong></p>
+              <ul class="job-points">
+                <li>Practised test-driven development and built automated test suites to enforce quality before production releases.</li>
+                <li>Established early CI/CD pipelines to automate build, test and distribution.</li>
+                <li>Led greenfield Flutter development while refactoring legacy native Android codebases into modern architectures.</li>
+                <li>Worked closely with UI/UX designers and back-end teams in an Agile/Scrum environment.</li>
+              </ul>
+              <ul class="tags" aria-label="Skills"><li class="tag">Flutter</li><li class="tag">Android</li><li class="tag">TDD</li><li class="tag">CI/CD</li><li class="tag">Agile</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= Skills ================= -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title" id="skills-title">Tools I use every day</h2>
+        </header>
+
+        <div class="skills-grid">
+          <section class="card skill-group reveal" aria-labelledby="sk-mobile">
+            <h3 id="sk-mobile"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Mobile</h3>
+            <ul class="tags"><li class="tag">Flutter</li><li class="tag">Dart</li><li class="tag">iOS</li><li class="tag">Android</li><li class="tag">Kotlin</li><li class="tag">Swift</li><li class="tag">React Native</li><li class="tag">Platform channels</li></ul>
+          </section>
+          <section class="card skill-group reveal" aria-labelledby="sk-ai">
+            <h3 id="sk-ai"><svg class="icon" aria-hidden="true"><use href="#i-sparkles"/></svg>AI &amp; ML</h3>
+            <ul class="tags"><li class="tag">LLM integration</li><li class="tag">RAG</li><li class="tag">Agentic AI</li><li class="tag">LLM orchestration</li><li class="tag">Machine learning</li><li class="tag">Azure AI</li></ul>
+          </section>
+          <section class="card skill-group reveal" aria-labelledby="sk-arch">
+            <h3 id="sk-arch"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg>Architecture</h3>
+            <ul class="tags"><li class="tag">Riverpod</li><li class="tag">BLoC</li><li class="tag">Clean architecture</li><li class="tag">Modular design</li><li class="tag">TDD</li><li class="tag">Performance tuning</li></ul>
+          </section>
+          <section class="card skill-group reveal" aria-labelledby="sk-back">
+            <h3 id="sk-back"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg>Backend &amp; data</h3>
+            <ul class="tags"><li class="tag">Python</li><li class="tag">FastAPI</li><li class="tag">Django REST</li><li class="tag">PostgreSQL</li><li class="tag">Firebase</li><li class="tag">SQLite</li><li class="tag">Hive</li><li class="tag">Docker</li></ul>
+          </section>
+          <section class="card skill-group reveal" aria-labelledby="sk-int">
+            <h3 id="sk-int"><svg class="icon" aria-hidden="true"><use href="#i-plug"/></svg>Integrations</h3>
+            <ul class="tags"><li class="tag">REST APIs</li><li class="tag">WebSockets</li><li class="tag">Stripe</li><li class="tag">Google Maps</li><li class="tag">FCM push</li><li class="tag">Thermal printing</li></ul>
+          </section>
+          <section class="card skill-group reveal" aria-labelledby="sk-ship">
+            <h3 id="sk-ship"><svg class="icon" aria-hidden="true"><use href="#i-rocket"/></svg>Delivery</h3>
+            <ul class="tags"><li class="tag">CI/CD</li><li class="tag">Build flavors</li><li class="tag">App Store Connect</li><li class="tag">Google Play Console</li><li class="tag">Git</li><li class="tag">Agile / Scrum</li></ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Education ================= -->
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Education</p>
+          <h2 class="section-title" id="education-title">Education &amp; certifications</h2>
+        </header>
+
+        <div class="edu-grid">
+          <div class="card edu-block reveal">
+            <h3>Degree</h3>
+            <ul class="cred-list">
+              <li class="cred">
+                <span class="cred-badge" aria-hidden="true"><svg class="icon"><use href="#i-cap"/></svg></span>
+                <div>
+                  <p class="cred-name">Bachelor’s degree, Computer Science</p>
+                  <p class="cred-src">Qurtuba University of Science and Information Technology</p>
+                  <p class="cred-id">2015 – 2019</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card edu-block reveal">
+            <h3>Certifications</h3>
+            <ul class="cred-list">
+              <li class="cred">
+                <span class="cred-badge" aria-hidden="true">MS</span>
+                <div>
+                  <p class="cred-name">Microsoft Certified: Azure AI Fundamentals</p>
+                  <p class="cred-src">Microsoft · Issued Aug 2026</p>
+                  <p class="cred-id">Credential ID 89675DE221E0644</p>
+                </div>
+              </li>
+              <li class="cred">
+                <span class="cred-badge" aria-hidden="true">ML</span>
+                <div>
+                  <p class="cred-name">Supervised Machine Learning: Regression and Classification</p>
+                  <p class="cred-src">DeepLearning.AI &amp; Stanford University · Coursera</p>
+                </div>
+              </li>
+              <li class="cred">
+                <span class="cred-badge" aria-hidden="true">ML</span>
+                <div>
+                  <p class="cred-name">Advanced Learning Algorithms</p>
+                  <p class="cred-src">DeepLearning.AI &amp; Stanford University · Coursera</p>
+                </div>
+              </li>
+              <li class="cred">
+                <span class="cred-badge" aria-hidden="true">ML</span>
+                <div>
+                  <p class="cred-name">Unsupervised Learning, Recommenders, Reinforcement Learning</p>
+                  <p class="cred-src">DeepLearning.AI &amp; Stanford University · Coursera</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title" id="contact-title" style="margin-top:14px">Have an app idea? Let’s build it.</h2>
+          <p class="section-lead">
+            Whether it’s a new app, an AI feature for an existing product or a codebase that needs rescuing —
+            tell me what you’re working on and I’ll get back to you with next steps.
+          </p>
+          <a class="contact-email" href="mailto:mtbahauddin@gmail.com?subject=Project%20enquiry">
+            mtbahauddin@gmail.com
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <div class="contact-links">
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/tayyyab/" target="_blank" rel="noopener me">
+              <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/tayyyab" target="_blank" rel="noopener me">
+              <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub
+            </a>
+            <a class="btn btn-ghost" href="/resume.pdf">
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Résumé (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Muhammad Tayyab Bahaud Din · Islamabad, Pakistan</p>
+      <ul class="footer-links">
+        <li><a href="/resume.html">Résumé (HTML)</a></li>
+        <li><a href="/resume.pdf">Résumé (PDF)</a></li>
+        <li><a href="/llms.txt">llms.txt</a></li>
+        <li><a href="#top">Back to top ↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Screenshot viewer">
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-btn lightbox-close" type="button" aria-label="Close"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <button class="lightbox-btn lightbox-prev" type="button" aria-label="Previous screenshot"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+    <button class="lightbox-btn lightbox-next" type="button" aria-label="Next screenshot"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+  </dialog>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
